@@ -1,0 +1,175 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 90vh;
+  background-image: url("../assets/Images/hero-bio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  background-color: rgb(163, 163, 163);
+  background-blend-mode: multiply;
+  position: relative;
+
+  & {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 80vh;
+    align-items: center;
+    position: relative;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__info {
+    color: #fff;
+  }
+
+  &__music {
+    width: 350px;
+  }
+
+  &__title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .BandSite-Black-Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 55, 55, 0.482);
+    z-index: 1;
+  }
+}
+
+.product-card__image-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .product-card__image {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.product-card__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 36px 180px;
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex: 1 1 300px;
+  font-size: 1rem;
+
+  &__desc {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+  }
+
+  &__details {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    padding-left: 48px;
+  }
+
+  &__The-bees-knees {
+    flex-basis: 49%;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+  }
+
+  &__title_The-bees-knees {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 48px;
+    margin: 0%;
+  }
+}
+
+.Gallery-card__container-Gallery {
+  background-color: rgb(234, 234, 234);
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 36px;
+    padding-left: 6rem;
+  }
+}
+
+.images {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 36px;
+
+  img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+}

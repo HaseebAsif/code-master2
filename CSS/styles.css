@@ -1,0 +1,508 @@
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  src: url("../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next"; /* Corrected font-family name */
+  background-color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  background-color: #323232;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-bar__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 5px;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.nav-bar__list-item {
+  margin-right: 20px; /* Spacing between nav items */
+  align-items: center;
+}
+
+.nav-bar__link {
+  text-decoration: none;
+  color: white; /* Example color */
+}
+
+.nav-bar__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+ 
+}
+
+.nav-bar__logo {
+  width: 120px;
+  margin: 0 8rem;
+}
+
+#formContainer {
+  display: grid;
+  padding: 5%;
+  grid-template-columns: 100%;
+  justify-content: center;
+  font-size: 1rem;
+  margin-left: 10px;
+  padding-top: 3rem;
+  font-family: "Avenir Next";
+
+}
+
+#signupForm{
+  display: flex;
+  flex-direction: row;
+  gap:10%;
+  /* grid-template-columns: 20% 80%; */
+  justify-content: left;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: 90%;
+
+}
+
+#name{
+  width: 700px;
+  height: 40px;
+  border-color: gray;
+  border-style: solid;
+  color: gray;
+}
+
+#password{
+  width: 700px;
+  height: 40px;
+  border-color: gray;
+  border-style: solid;
+  color: gray;
+}
+
+#confirmPassword{
+  width: 100%;
+  height: 40px;
+  border-color: gray;
+  border-style: solid;
+  color: gray;
+}
+
+#emailUpdates{
+  width: 20px;
+  height: 20px;
+  border-color: gray;
+  border-style: solid;
+  color: gray;
+  align-items: left;
+
+}
+
+footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: #323232;
+  color: #fff;
+  padding: 2rem 5rem;
+  flex-direction: column;
+}
+
+.footer-icons-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__text {
+  margin: 2rem 0;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.product-card__title_The-bees-knees {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 11rem;
+}
+
+.Gallery-card__title {
+  font-size: 2rem;
+  margin-left: 6rem;
+  padding-top: 3rem;
+}
+
+
+
+.footer-row-one {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: left;
+  gap: 1%;
+  font-size: 20px;
+}
+
+.footer-row-two {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  justify-content: left;
+  gap: 1%;
+  font-size: 20px;
+ 
+}
+
+.footer-row-three {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  gap: 1%;
+  font-size: 20px;
+}
+
+.footer-get-in-touch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.footer-heading {
+  font-size: 2.3rem;
+  margin-right: 4rem;
+}
+
+.footer-icons img {
+  padding: 0 1rem;
+  font-size: 3rem;
+  height: 1.6rem;
+}
+
+.footer-row-one-mobile{
+  display: none;
+}
+
+.footer-row-two-mobile{
+  display: none;
+}
+
+.footer-row-three-mobile{
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #name{
+    width: 500px;
+    height: 40px;
+    border-color: gray;
+    border-style: solid;
+    color: gray;
+  }
+  
+  #password{
+    width: 500px;
+    height: 40px;
+    border-color: gray;
+    border-style: solid;
+    color: gray;
+  }
+  .footer-row-one {
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    justify-content: left;
+    gap: 1%;
+    font-size: 20px;
+  }
+  
+  .footer-row-two {
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    justify-content: left;
+    gap: 1%;
+    font-size: 20px;
+   
+  }
+  
+  .footer-row-three {
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    gap: 1%;
+    font-size: 15px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 70vh;
+  }
+ 
+  .hero__title {
+    /* font-size: 60px;  */
+    margin-left: 36px;
+  } 
+
+  .hero__subtitle {
+    /* font-size: 60px;  */
+    margin-left: 36px;
+  } 
+
+  .hero__music {
+    /* font-size: 60px;  */
+    margin-left: 36px;
+  } 
+  .product-card {
+    flex: 1 1 100%; /* Adjust size for tablet view */
+  }
+  .product-card__title {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .product-card__The-bees-knees {
+    flex-basis: 43%; /* Adjust the width of each column */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .product-card__title_The-bees-knees {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 48px;
+  }
+  .Gallery-card__title {
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 3rem;
+  }
+  .product-card__container {
+    padding: 10px 10px;
+  }
+  .flex-container img {
+    max-width: 230px; /* Adjust image size for tablets */
+  }
+  .flex-container {
+    max-height: auto;
+    padding: 16px;
+  }
+  /* Adjust navigation bar logo size for tablets */
+  .nav-bar__logo {
+    width: 120px;
+    margin: 2rem 0;
+  }
+  .footer-row-one {
+    gap: 1rem;
+  }
+  .footer-row-two {
+    gap: 1rem;
+  }
+  .footer-row-three {
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+  #name{
+    width: 200px;
+    height: 40px;
+    border-color: gray;
+    border-style: solid;
+    color: gray;
+  }
+  
+  #password{
+    width: 200px;
+    height: 40px;
+    border-color: gray;
+    border-style: solid;
+    color: gray;
+  }
+
+  .footer-row-one {
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    justify-content: left;
+    gap: 1%;
+    font-size: 20px;
+    display: none;
+  }
+  
+  .footer-row-two {
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    justify-content: left;
+    gap: 1%;
+    font-size: 20px;
+    display: none;
+   
+  }
+  
+  .footer-row-three {
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    gap: 1%;
+    font-size: 15px;
+    display: none;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 70vh;
+  }
+  .hero__subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 5%;
+  }
+  .hero__title {
+    font-size: 30px; 
+    margin-left: 5%;
+    margin-bottom: 5%;
+  } 
+
+  .hero__music {
+    /* font-size: 60px;  */
+    margin-left: 5%;
+    width: 200px;
+  } 
+  
+
+  .product-card__container {
+    padding: 10px 10px;
+  }
+  .product-card__desc {
+    font-size: 1.3rem;
+  }
+  .product-card__details {
+    font-size: 1.1rem;
+  }
+  
+  .product-card,
+  .flex-container {
+    flex-direction: column; /* Stack items vertically on mobile */
+  }
+  .product-card__title,
+  .Gallery-card__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-left: 16px;
+  }
+  .product-card__The-bees-knees {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+  }
+  .Gallery-card__title {
+    font-size: 2rem;
+    margin-left: 1rem;
+    padding-top: 3rem;
+  }
+  .product-card__title_The-bees-knees {
+    font-size: 23px;
+    font-weight: 600;
+    padding-left: 12px;
+    padding-bottom: 16px;
+  }
+  .flex-container img {
+    max-width: 100%; /* Full width images on mobile */
+  }
+  .nav-bar {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
+  }
+  /* Adjust navigation bar layout for mobile */
+  .nav-bar__list {
+    flex-direction: row;
+    margin-bottom: 0;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .nav-bar__list-item {
+    padding: 0 32px;
+    margin-left: 0px;
+  }
+  .nav-bar__logo {
+    width: 120px; /* Increase logo size for mobile */
+    margin-top: 10px;
+  }
+  .nav-bar__logo {
+    width: 120px;
+    margin: 0.5rem 0;
+  }
+  .footer-row-one {
+    gap: 1rem;
+  }
+  .footer-row-two {
+    gap: 1rem;
+  }
+  .footer-row-three {
+    gap: 1rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+
+  .footer-row-one-mobile{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  
+  .footer-row-two-mobile{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  
+  .footer-row-three-mobile{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+} 

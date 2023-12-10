@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BandSite</title>
+    <link rel="stylesheet" href="./CSS/resets.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/show.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <img
+          class="nav-bar__logo"
+          src="./assets/Logo/Logo-bandsite.svg"
+          alt="BandSite Logo"
+        />
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item">
+            <a class="nav-bar__link" href="./index.html">Biography</a>
+          </li>
+          <li class="nav-bar__list-item">
+            <a class="nav-bar__link nav-bar__link--active" href="./shows.html"
+              >Shows</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="BandSite-Black-Overlay"></div>
+      <div class="hero__info">
+        <h1 class="hero__title">The Bees Knees</h1>
+      </div>
+    </section>
+    <main>
+      <h2 class="product-card__title">About The Musicians</h2>
+      <div class="product-card__image-container">
+        <img
+          class="product-card__image"
+          src="./assets/Images/band.jpg"
+          alt="band-on-stage"
+        />
+      </div>
+      <section class="product-card__container">
+        <article class="product-card product-card--promoted">
+          <p class="product-card__desc">
+            “We push each other to be the best. It’s not uncommon for one of us
+            to say ‘this needs to be better, back to the drawing board’”
+          </p>
+          <p class="product-card__details">
+            - Bryan Teddy, lead vocalist of The Bees Knees
+          </p>
+        </article>
+      </section>
+      <h3 class="product-card__title_The-bees-knees">The Bees Knees</h3>
+      <section class="product-card__container">
+        <article class="product-card">
+          <p class="product-card__The-bees-knees">
+            The Bees Knees is a pop rock band originating from San Francisco,
+            California. The band consists of lead vocalist Bryan Teddy,
+            guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee
+            and drummer Freddie Fischer. The band achieved its first commercial
+            success as an unsigned act, drawing attention from manager Cam
+            Adams. Having worked with other popular acts (The Elephant In The
+            Room, One Trick Pony, The Cat’s Meow), Adams was confident the band
+            could succeed even further, pushing them to sign with Magenta
+            Records.
+          </p>
+          <p class="product-card__The-bees-knees">
+            From there, the band has soared, gaining international recognition
+            and ranking in the top 10 on the Poster Charts. New fans immediately
+            fell in love with the band’s original and organic attitude,
+            solidifying their place as one of the hottest and fastest up and
+            coming acts of this century. Fans affectionately refer to themselves
+            as “The Hive” and are drawn to their candid and authentic
+            performances on stage. Looking forward to touring in the future, The
+            Bees Knees are currently recording their second studio album,
+            looking to be released in late 2021
+          </p>
+        </article>
+      </section>
+      <section class="Gallery-card__container-Gallery">
+        <h4 class="Gallery-card__title">Photo Gallery</h4>
+        <div class="flex-container">
+          <img
+            src="./assets/Images/Photo-gallery-1.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-2.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-3.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-4.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-5.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-6.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-7.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-8.jpg"
+            class="images"
+            alt=""
+          />
+          <img
+            src="./assets/images/Photo-gallery-9.jpg"
+            class="images"
+            alt=""
+          />
+        </div>
+      </section>
+      <div id="formContainer">
+        <h1>JOIN THE CONVERSATION</h1>
+        <form
+          id="signupForm"
+          action="https://postman-echo.com/post"
+          method="post"
+        >
+          <div class="formContainer__photo">
+            <img
+              src="./assets/Images/Mohan-muruge.jpg"
+              alt="Concert Photo"
+              style="height: auto; width: 50px; border-radius: 50%"
+            />
+          </div>
+          <div class="form">
+            <label for="name" style="color: gray">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your Name"
+            /><br />
+            <label for="password" style="color: gray">Comment:</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Add a New Comment"
+            /><br />
+            <button type="submit" id="submitButton" class="show__button">
+              Comment
+            </button>
+          </div>
+        </form>
+      </div>
+      <section class="comment-section">
+        <h3 class="comment-section__header">Comments</h3>
+        <form id="commentForm">
+          <input
+            type="text"
+            id="commentAuthor"
+            placeholder="Your Name"
+            required
+          />
+          <textarea
+            id="commentContent"
+            placeholder="Your Comment"
+            required
+          ></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div class="all__comments" id="commentContainer">
+          <!-- Comments will be added here by JavaScript -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-get-in-touch">
+        <div class="footer-icons-row">
+          <h3 class="footer-heading">Get in Touch</h3>
+          <div class="footer-icons">
+            <img src="./assets/Icons/SVG/Icon-instagram.svg" alt="" />
+            <img src="./assets/Icons/SVG/Icon-facebook.svg" alt="" />
+            <img src="./assets/Icons/SVG/Icon-twitter.svg" alt="" />
+          </div>
+        </div>
+        <img
+          class="nav-bar__logo"
+          src="./assets/Logo/Logo-bandsite.svg"
+          alt="BandSite Logo"
+        />
+      </div>
+      <div class="footer-row-one">
+        <p>Cam Adams<br />The Bees Knees Management</p>
+        <p>Pearl Gregg<br />Limitless Artist Group</p>
+        <p>Carson Whyte<br />ARCH Entertainmen</p>
+      </div>
+      <div class="footer-row-two">
+        <p>503 Broadway Penthouse,<br />New York, NY 10012, USA</p>
+        <p>Booking Agent for<br />USA / South America / Japan</p>
+        <p>Booking Agent for<br />UK / EU / AU</p>
+      </div>
+      <div class="footer-row-three">
+        <p>info@thebeesknees.com</p>
+        <p>pearl.gregg@limitlessag.com</p>
+        <p>cwhyte@archentertainment.com</p>
+      </div>
+      <div class="footer-row-one-mobile">
+        <p>Cam Adams<br />The Bees Knees Management</p>
+        <p>503 Broadway Penthouse,<br />New York, NY 10012, USA</p>
+        <p>info@thebeesknees.com</p>
+      </div>
+      <div class="footer-row-two-mobile">
+        <p>Pearl Gregg<br />Limitless Artist Group</p>
+        <p>Booking Agent for<br />USA / South America / Japan</p>
+        <p>pearl.gregg@limitlessag.com</p>
+      </div>
+      <div class="footer-row-three-mobile">
+        <p>Carson Whyte<br />ARCH Entertainmen</p>
+        <p>Booking Agent for<br />UK / EU / AU</p>
+        <p>cwhyte@archentertainment.com</p>
+      </div>
+      <p class="footer__text">The Bees Knees &copy; 2020</p>
+    </footer>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

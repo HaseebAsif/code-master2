@@ -1,0 +1,131 @@
+// Importing the mixins
+@use 'mixins' as *;
+
+// CSS content converted to SCSS with mixins
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  src: url("../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"),
+       url("../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"),
+       url("../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next"; // Corrected font-family name
+  background-color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  background-color: #323232;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+    gap: 20px;
+    font-size: 1.2rem;
+
+    &-item {
+      margin-right: 20px; // Spacing between nav items
+      align-items: center;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: white; // Example color
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 120px;
+    margin: 0 8rem;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+// ... Other styles ...
+
+// Tablet-specific styles
+@include tablet {
+  .hero {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 70vh;
+    // ... Other tablet-specific styles ...
+  }
+}
+
+// Desktop-specific styles
+@include desktop {
+  .nav-bar__logo {
+    width: 150px; // Example adjustment for desktop
+    // ... Other desktop-specific styles ...
+  }
+}
+
+// Importing the mixins
+
+// Comments section styles
+.all__comments {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column; // Change to column to stack elements
+  width: 50%;
+  margin: 2rem auto;
+
+  .user__info {
+    display: flex;
+    flex-direction: column;
+
+    .comment__author {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    .comment__content {
+      font-size: 1rem;
+    }
+  }
+
+  // Tablet-specific styles
+  @include tablet {
+    width: 80%;
+    // Additional tablet-specific styles for .user__info
+  }
+
+  // Desktop-specific styles
+  @include desktop {
+    width: 50%; // Adjust desktop width as necessary
+    // Additional desktop-specific styles for .user__info
+  }
+}
+
